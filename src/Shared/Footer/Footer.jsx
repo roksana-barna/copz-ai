@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="  text-slate-400 bg-gray-950 mt-20 py-8">
             <div className='mt-6'>
                 <div style={{ background: 'linear-gradient(100deg, #FFFF00, #800080, #0000FF)' }} className="p-6 rounded-md">
-                   <div className='flex justify-between'>
+                   <div className=' flex justify-between'>
                    <span className="text-xl font-semibold mb-4 text-white bg-clip-text">
                         It will help you improve your writing & <br/> bring ideas more clearly.
                     </span>

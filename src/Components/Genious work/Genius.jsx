@@ -3,9 +3,9 @@ import img from '../../assets/set-of-google-apps-logo-design-free-vector.jpg'
 
 const Genius = () => {
     return (
-        <div className='md:flex justify-around  my-16 '>
+        <div className='md:flex justify-around   my-16 '>
             <div>
-                <img className='h-48 w-48 lg:ml-32' src={img} alt="" />
+                <img className='h-48 w-48 lg:ml-32 rounded-lg bg-black' src={img} alt="" />
             </div>
             <div className='lg:mr-20'>
                 <h2 className="text-2xl font-semibold text-white mb-4">Al Genius Works on your<br/> favorite websites</h2>

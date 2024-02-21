@@ -3,7 +3,7 @@ import { AiOutlineCheckCircle, AiOutlineBulb, AiOutlineEdit, AiOutlineReload, Ai
 
 const Material = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-black '>
             <div className='text-slate-300 py-6 bg-black text-center'>
             <h2 className='text-2xl' >AI Create material in a matter of seconds.</h2>
             <p className=' mb-3 font-thin text-xs mt-5'>Give our AI a few descriptions and we'll automatically create blog articles,<br /> product descriptions and more for you within just few second.</p>

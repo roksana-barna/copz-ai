@@ -5,6 +5,7 @@ import Trusted from '../../Components/Trusted/Trusted';
 import Material from '../../Components/Material/Material';
 import Accordian from '../../Components/Accordian/Accordian';
 import Genius from '../../Components/Genious work/Genius';
+import Pricing from '../../Components/Pricing/Pricing';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Dashboard></Dashboard>
             <Trusted></Trusted>
             <Material></Material>
+            <Pricing></Pricing>
             <Genius></Genius>
             <Accordian></Accordian>
         </div>
