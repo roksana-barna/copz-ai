@@ -27,18 +27,9 @@ const router = createBrowserRouter([
             path:'/ai-generate',
             element:<AiGenatare></AiGenatare>
           }
-
         ]
-
       },
-      {
-        path:'/',
-        element:<Trusted></Trusted>
-      }
-       
     ]
-
-
   },
  
 ]);

@@ -61,7 +61,6 @@ const Footer = () => {
                         </h1>
                     </Link>
                 </div>
-
                 <p>© Copyright 2023, All Rights Reserved</p>
             </div>
         </footer>

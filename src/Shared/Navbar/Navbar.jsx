@@ -56,7 +56,10 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href="#" className="inline-block  text-xs px-4 py-2 font-thin text-white border-2 mt-4  border-transparent border-red-300 rounded-lg transition duration-300 hover:border-gradient">
+                    <a
+                        href="#"
+                        className=" border-gradient inline-block text-xs px-4 py-2 font-thin text-white border-2 mt-4 border-transparent border-red-300 rounded-lg transition duration-300 hover:border-gradient"
+                    >
                         Start Writing
                     </a>
                 </div>

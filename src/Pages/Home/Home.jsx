@@ -6,6 +6,7 @@ import Material from '../../Components/Material/Material';
 import Accordian from '../../Components/Accordian/Accordian';
 import Genius from '../../Components/Genious work/Genius';
 import Pricing from '../../Components/Pricing/Pricing';
+import Content from '../../Components/Content/Content';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Dashboard></Dashboard>
             <Trusted></Trusted>
             <Material></Material>
+            <Content></Content>
             <Pricing></Pricing>
             <Genius></Genius>
             <Accordian></Accordian>

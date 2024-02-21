@@ -8,7 +8,7 @@ import logo5 from '../../assets/amazon-dark-logo-black-and-white.png'
 
 const Trusted = () => {
     return (
-        <div className='bg-black text-2xl text-center  text-white py-6 '>
+        <div className='bg-black text-2xl text-center mt-20 mb-10 text-white py-6 '>
             <h2>Trusted by Professional and Terms</h2>
             <div className='flex justify-evenly skeleton bg-black mt-6' >
                 <img className='w-20 h-14' src={logo1} alt="" />
