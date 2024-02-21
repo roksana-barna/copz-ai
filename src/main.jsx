@@ -11,6 +11,8 @@ import Home from './Pages/Home/Home.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import AiGenatare from './Components/Ai Generate/AiGenatare.jsx';
 import Trusted from './Components/Trusted/Trusted.jsx';
+import UseCase from './Pages/UseCase/UseCase.jsx';
+import Chats from './Components/Chats/Chats.jsx';
 
 
 const router = createBrowserRouter([
@@ -24,11 +26,21 @@ const router = createBrowserRouter([
         element: <Home></Home>,
         children:[
           {
-            path:'/ai-generate',
+            path:'/',
             element:<AiGenatare></AiGenatare>
           }
         ]
       },
+      {
+        path:'/useCases',
+        element:<UseCase></UseCase>,
+        children:[
+          {
+            path:'/useCases',
+            element:<Chats></Chats>
+          }
+        ]
+      }
     ]
   },
  
