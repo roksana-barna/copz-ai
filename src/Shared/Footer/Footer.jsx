@@ -3,18 +3,20 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/gradient-logo-template-with-abstract-shape_23-2148211728.jpg'
 const Footer = () => {
     return (
-        <footer className="  text-white bg-black py-8">
-            <div className=''>
-                <div style={{ background: 'linear-gradient(800deg, #FFFF00, #800080, #0000FF)' }} className="p-6 rounded-md">
-                    <span className="text-xl font-semibold mb-4 text-white bg-clip-text">
-                        It will help you improve your writing & bring ideas more clearly.
+        <footer className="  text-slate-400 bg-gray-950 mt-20 py-8">
+            <div className='mt-6'>
+                <div style={{ background: 'linear-gradient(100deg, #FFFF00, #800080, #0000FF)' }} className="p-6 rounded-md">
+                   <div className='flex justify-between'>
+                   <span className="text-xl font-semibold mb-4 text-white bg-clip-text">
+                        It will help you improve your writing & <br/> bring ideas more clearly.
                     </span>
-                    <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-4  lg:ml-10 rounded-full">
+                    <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 px-4  rounded-full">
                         Start 14 Days Free Trial
                     </button>
+                   </div>
                 </div>
             </div>
-            <div className="max-w-screen-xl mx-auto flex flex-wrap justify-between bg-black p-10 ">
+            <div className="max-w-screen-xl mx-auto flex flex-wrap justify-between bg-gray-950 p-10 ">
                 <div className="flex flex-col">
                     <h4 className="text-lg font-thin mb-4">Company</h4>
                     <a href="#">About Us</a>
