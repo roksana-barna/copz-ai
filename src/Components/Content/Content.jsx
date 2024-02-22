@@ -1,8 +1,31 @@
 import React from 'react';
 import { BsChatSquareDots, BsCardHeading, BsLightning, BsListCheck, BsArrowRight } from 'react-icons/bs'; // Import icons
-import { FaEye, FaFacebook, FaRegCheckCircle } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 const Content = () => {
+
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.2
+            }
+        }
+    };
+
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.5, // Adjust the duration as needed
+            }
+        }
+    };
 
     return (
         <div>
@@ -12,7 +35,7 @@ const Content = () => {
             </div>
             <div>
                 <div className="md:flex justify-between p-8 ">
-                    <div className="w-1/2 bg-gray-950 py-10">
+                    <div className="md:w-1/2 bg-gray-950 py-10">
                         <div className="container mx-auto text-left pl-6">
                             <h2 className="text-3xl font-semibold text-white mb-8">Select Writing <br />Template</h2>
                             <p className="text-sm text-gray-400 mb-6">
@@ -37,32 +60,35 @@ const Content = () => {
                             </a>
                         </div>
                     </div>
-
-                    <div className="w-1/2 grid grid-cols-2 border-8 rounded-2xl  border-blue-700">
-                        <div className="w-full bg-white p-6 border border-skyblue  rounded-lg">
+                    <motion.div className="md:w-1/2 grid grid-cols-1 skeleton lg:grid-cols-2 border-8 rounded-2xl border-blue-700"
+                        variants={container}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <motion.div className="w-full bg-white p-6 border border-skyblue rounded-lg" variants={item}>
                             <BsChatSquareDots className="text-3xl text-skyblue mb-4" />
                             <h3 className="text-lg font-semibold mb-2">Posts on Social Media</h3>
                             <p className="text-sm text-gray-600">Creative and engaging social media posts for your brand.</p>
-                        </div>
-                        <div className="w-full bg-white p-6 border border-skyblue rounded-lg">
+                        </motion.div>
+                        <motion.div className="w-full bg-white p-6 border border-skyblue rounded-lg" variants={item}>
                             <BsCardHeading className="text-3xl text-skyblue mb-4" />
                             <h3 className="text-lg font-semibold mb-2">Website Headlines/Copy</h3>
                             <p className="text-sm text-gray-600">Generate professional copy for your website that converts users.</p>
-                        </div>
-                        <div className=" w-full bg-white p-6 border border-skyblue rounded-lg">
+                        </motion.div>
+                        <motion.div className="w-full bg-white p-6 border border-skyblue rounded-lg" variants={item}>
                             <BsLightning className="text-3xl text-skyblue-300 mb-4" />
                             <h3 className="text-lg font-semibold mb-2">Blog Ideas</h3>
                             <p className="text-sm text-gray-600">Creative and engaging blog ideas for your brand.</p>
-                        </div>
-                        <div className="w-full bg-white p-6 border border-skyblue rounded-lg">
+                        </motion.div>
+                        <motion.div className="w-full bg-white p-6 border border-skyblue rounded-lg" variants={item}>
                             <BsListCheck className="text-3xl text-skyblue mb-4" />
                             <h3 className="text-lg font-semibold mb-2">Blog Post Outline</h3>
                             <p className="text-sm text-gray-600">Generate professional outlines for your blog posts.</p>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
-                <div className="md:flex justify-between p-8 mt-10 ">
-                    <div className="w-1/2  rounded-2xl bg-orange-300 p-6">
+                <div className="md:flex  justify-between p-8 mt-10 ">
+                    <div className="md:w-1/2  rounded-2xl skeleton bg-orange-300 p-6">
                         <div className="bg-white p-6 border border-skyblue rounded-lg">
                             <h3 className="text-lg font-semibold mb-2">Social Media Posts</h3>
                             <p className="text-sm text-gray-600">What is your post about?</p>
@@ -97,7 +123,7 @@ const Content = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 bg-gray-950 py-10">
+                    <div className="md:w-1/2 bg-gray-950 py-10">
                         <div className="container mx-auto lg:ml-24 text-left">
                             <h2 className="text-3xl font-semibold text-white mb-8">Describe your
                                 <br />Topic</h2>
@@ -122,8 +148,8 @@ const Content = () => {
                         </div>
                     </div>
                 </div>
-                <div className="md:flex justify-between p-8 mt-10 ">
-                    <div className="w-1/2 bg-gray-950 py-10">
+                <div className="md:flex  justify-between p-8 mt-10 ">
+                    <div className="md:w-1/2 bg-gray-950 py-10">
                         <div className="container mx-auto text-left pl-6">
                             <h2 className="text-3xl font-semibold text-white mb-8">Generate quality <br />content</h2>
                             <p className="text-sm text-gray-400 mb-6">
@@ -148,8 +174,7 @@ const Content = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2  rounded-2xl bg-blue-400 p-6">
-                        {/* Card: Social Media Posts */}
+                    <div className="md:w-1/2 skeleton  rounded-2xl bg-blue-400 p-6">
                         <div className="bg-white p-6 border border-skyblue rounded-lg">
                             <div className='flex justify-between'>
                                 <h3 className="text-lg font-semibold mb-2">
