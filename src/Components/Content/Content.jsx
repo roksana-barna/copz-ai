@@ -3,7 +3,6 @@ import { BsChatSquareDots, BsCardHeading, BsLightning, BsListCheck, BsArrowRight
 import { motion } from "framer-motion";
 
 const Content = () => {
-
     const container = {
         hidden: { opacity: 1, scale: 0 },
         visible: {
@@ -22,7 +21,7 @@ const Content = () => {
             y: 0,
             opacity: 1,
             transition: {
-                duration: 0.5, // Adjust the duration as needed
+                duration: 0.5, 
             }
         }
     };
